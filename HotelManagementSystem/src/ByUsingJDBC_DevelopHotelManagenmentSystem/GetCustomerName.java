@@ -22,7 +22,7 @@ public class GetCustomerName {
 			jrs.setUrl(URL);
 			jrs.setUsername(USER_NAME);
 			jrs.setPassword(PASSWARD);
-			jrs.setCommand("Select NAME  from Coustomer_Hotel_Room_Reservation where ROOM_NUMBER = ?");
+			jrs.setCommand("select name  from Coustomer_Hotel_Room_Reservation where ROOM_NUMBER = ?");
 			jrs.setLong(1, roomNum);
 			jrs.execute();
 			ResultSetMetaData rm = jrs.getMetaData();
